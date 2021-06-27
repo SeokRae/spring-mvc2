@@ -1,0 +1,15 @@
+logging:
+  level:
+    org:
+      apache:
+        coyote:
+          http11: debug
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 10MB
+
+file:
+  dir: /Users/seok/IdeaProjects/spring-mvc2/fileupload/files/
