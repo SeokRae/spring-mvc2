@@ -1,6 +1,7 @@
-package com.example.converter;
+package com.example.controller;
 
-import com.example.converter.domain.UserData;
+import com.example.converter.IpPort;
+import com.example.domain.UserData;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,6 +30,19 @@ public class HelloController {
     @GetMapping("/hello-v4/{userId}")
     public String helloV4(@PathVariable Integer data) {
         System.out.println("data = " + data);
+        return "ok";
+    }
+
+    @GetMapping("/hello-v5")
+    public String helloV5(@RequestParam Integer data) {
+        System.out.println("data = " + data);
+        return "ok";
+    }
+
+    @GetMapping("/ip-port")
+    public String ipPort(@RequestParam IpPort ipPort) {
+        System.out.println("ipPort IP = " + ipPort.getIp());
+        System.out.println("ipPort PORT = " + ipPort.getPort());
         return "ok";
     }
 
