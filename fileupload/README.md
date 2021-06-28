@@ -128,58 +128,6 @@ log.info("body={}", body);
 
 
 ```shell
-2021-06-27 18:48:08.078 DEBUG 8483 --- [nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [POST /servlet/v2/upload HTTP/1.1
-Host: localhost:8080
-Connection: keep-alive
-Content-Length: 1116
-Pragma: no-cache
-Cache-Control: no-cache
-sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
-sec-ch-ua-mobile: ?0
-Upgrade-Insecure-Requests: 1
-Origin: http://localhost:8080
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryCbSqHj45A6BJot7s
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: navigate
-Sec-Fetch-User: ?1
-Sec-Fetch-Dest: document
-Referer: http://localhost:8080/servlet/v2/upload
-Accept-Encoding: gzip, deflate, br
-Accept-Language: ko,en;q=0.9,ko-KR;q=0.8,en-US;q=0.7
-Cookie: Idea-b7b63a36=1eb6b06b-c44c-42cc-9f72-13d84592a7a7
-
-------WebKitFormBoundaryCbSqHj45A6BJot7s
-Content-Disposition: form-data; name="itemName"
-
-d
-------WebKitFormBoundaryCbSqHj45A6BJot7s
-Content-Disposition: form-data; name="file"; filename="áá¨áá¦02-1 MySQL 5.1 áá¥áá¥á«áá­á¼ Makefile áá¢á¼áá¥á¼ áá³áá³ááµá¸áá³(64ááµáá³).txt"
-Content-Type: text/plain
-
-./configure \
-    '--prefix=/usr/local/mysql'\
-    '--localstatedir=/usr/local/mysql/data'\
-    '--libexecdir=/usr/local/mysql/bin'\
-    '--with-comment=Toto mysql standard 64bit'\
-    '--with-server-suffix=-toto_standard'\
-    '--enable-thread-safe-client'\
-    '--enable-local-infile'\
-    '--enable-assembler'\
-    '--with-pic'\
-    '--with-fast-mutexes'\
-    '--with-client-ldflags=-static'\
-    '--with-mysqld-ldflags=-static'\
-    '--with-big-tables'\
-    '--with-readline'\
-    '--with-extra-charsets=complex'\
-    '--with-plugins=partition,archive,blackhole,csv,federated,heap,myisam,myisammrg,innodb_plugin'\
-    '--with-zlib-dir=bundled'\
-    'CC=gcc' 'CXX=gcc' 'CFLAGS=-O2' 'CXXFLAGS=-O2'
-
-------WebKitFormBoundaryCbSqHj45A6BJot7s--
-]
 2021-06-27 18:48:08.100  INFO 8483 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-27 18:48:08.100  INFO 8483 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-27 18:48:08.101  INFO 8483 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -228,58 +176,6 @@ Content-Type: text/plain
 	- file.transferTo(...) : 파일 저장
 
 ```shell
-2021-06-27 18:55:58.628 DEBUG 8553 --- [nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [POST /spring/upload HTTP/1.1
-Host: localhost:8080
-Connection: keep-alive
-Content-Length: 1116
-Pragma: no-cache
-Cache-Control: no-cache
-sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
-sec-ch-ua-mobile: ?0
-Upgrade-Insecure-Requests: 1
-Origin: http://localhost:8080
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryEKurvdoaIsXoip8C
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: navigate
-Sec-Fetch-User: ?1
-Sec-Fetch-Dest: document
-Referer: http://localhost:8080/spring/upload
-Accept-Encoding: gzip, deflate, br
-Accept-Language: ko,en;q=0.9,ko-KR;q=0.8,en-US;q=0.7
-Cookie: Idea-b7b63a36=1eb6b06b-c44c-42cc-9f72-13d84592a7a7
-
-------WebKitFormBoundaryEKurvdoaIsXoip8C
-Content-Disposition: form-data; name="itemName"
-
-d
-------WebKitFormBoundaryEKurvdoaIsXoip8C
-Content-Disposition: form-data; name="file"; filename="áá¨áá¦02-1 MySQL 5.1 áá¥áá¥á«áá­á¼ Makefile áá¢á¼áá¥á¼ áá³áá³ááµá¸áá³(64ááµáá³).txt"
-Content-Type: text/plain
-
-./configure \
-    '--prefix=/usr/local/mysql'\
-    '--localstatedir=/usr/local/mysql/data'\
-    '--libexecdir=/usr/local/mysql/bin'\
-    '--with-comment=Toto mysql standard 64bit'\
-    '--with-server-suffix=-toto_standard'\
-    '--enable-thread-safe-client'\
-    '--enable-local-infile'\
-    '--enable-assembler'\
-    '--with-pic'\
-    '--with-fast-mutexes'\
-    '--with-client-ldflags=-static'\
-    '--with-mysqld-ldflags=-static'\
-    '--with-big-tables'\
-    '--with-readline'\
-    '--with-extra-charsets=complex'\
-    '--with-plugins=partition,archive,blackhole,csv,federated,heap,myisam,myisammrg,innodb_plugin'\
-    '--with-zlib-dir=bundled'\
-    'CC=gcc' 'CXX=gcc' 'CFLAGS=-O2' 'CXXFLAGS=-O2'
-
-------WebKitFormBoundaryEKurvdoaIsXoip8C--
-]
 2021-06-27 18:55:58.656  INFO 8553 --- [nio-8080-exec-2] c.e.controller.SpringUploadController    : request=org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@6118ee50
 2021-06-27 18:55:58.658  INFO 8553 --- [nio-8080-exec-2] c.e.controller.SpringUploadController    : itemName=d
 2021-06-27 18:55:58.658  INFO 8553 --- [nio-8080-exec-2] c.e.controller.SpringUploadController    : multipartFile=org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5b36bb71
@@ -300,3 +196,9 @@ Content-Type: text/plain
 왜냐하면 서로 다른 고객이 같은 파일이름을 업로드 하는 경우 기존 파일 이름과 충돌이 날 수 있다. 
 서버에서는 저장할 파일명이 겹치지 않도록 내부에서 관리하는 별도의 파일명이 필요하다.
 ```
+
+- 상품 도메인
+- 상품 레포지토리
+- 업로드 파일 정보 보관
+- 파일 저장과 관련된 업무 처리
+- 다중 이미지 업로드를 위해 MultipartFile 파라미터를 사용한 API 제공 

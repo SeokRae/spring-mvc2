@@ -1,2 +1,5 @@
 rootProject.name = 'spring-mvc2'
 include 'fileupload'
+include 'typeconverter'
+include 'typeconverter'
+
