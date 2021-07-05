@@ -2,4 +2,6 @@ rootProject.name = 'spring-mvc2'
 include 'fileupload'
 include 'typeconverter'
 include 'typeconverter'
+include 'exception'
+include 'view-template'
 
